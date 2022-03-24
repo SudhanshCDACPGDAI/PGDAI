@@ -1,0 +1,56 @@
+			LAB2 Assignment CDAC NOIDA (PG-DAI)
+
+Answer 1:
+string="""hi my "name" is 'sudhansh'"""
+print(string)
+
+Answer 2:
+string="""hi my "name" is 'sudhansh'"""
+print(string)
+
+Answer 3:
+a=input("enter character")
+int_rep=ord(a)
+print(int_rep)
+
+Answer 4:
+string="abc"
+big_string=string+string+string+string+string
+print(big_string)
+
+Answer 5:
+print('–'*50)
+
+Answer 6:
+string=input("enter your string to convert to upper case")
+print(string.upper())
+
+Answer 7:
+string=input("enter your string here")
+first_two_last_two=string[0:2]+string[-2:]
+print(first_two_last_two)
+
+Answer 8:
+txt = input("enter your string")
+x = txt[1:].replace(txt[0], "$")
+x=txt[0]+x
+print(x)
+
+Answer 9:
+string=input("enter your string here")
+string_first_two=string[0:2]
+index=-1
+for i in range(0,len(string)):
+    if(string[i]==' '):
+        index=i
+        break    
+string_first_two_post_space=string[index+1:index+3]
+print(string_first_two)
+print(string_first_two_post_space)
+string_copy=string.replace(string_first_two,string_first_two_post_space)
+string_copy2=string_copy[2:].replace(string_first_two_post_space,string_first_two)
+string_copy3=string_copy[0:2]+string_copy2
+print(string_copy3)
+
+
+

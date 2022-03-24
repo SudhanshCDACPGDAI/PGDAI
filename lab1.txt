@@ -1,0 +1,83 @@
+				LAB1 ASSIGNMENT CDAC NOIDA (PG-DAI)
+
+Answer 1:
+import math
+print('Enter radius of circle:')
+rad = float(input())
+area= math.pi*rad*rad
+print(area)
+
+Answer 2:
+print('Enter temperature of city in fahrenheit:')
+tem_fah = float(input())
+celcius= 5.0/9.0*(tem_fah-32.0)
+print(celcius)
+
+Answer 3:
+a=float(input("Enter first number:"))
+b=float(input("Enter second number:"))
+choice=int(input("enter your choice: 1 for add, 2 for sub, 3 for mul, 4 for divide"))
+if(choice==1):
+    print(a+b)
+elif(choice==2):
+    print(a-b)
+elif(choice==3):
+    print(a*b)
+elif(choice==4):
+    print(a/b)
+else:
+    print("WRONG INPUT")
+
+Answer 4:
+import math
+number= float(input("enter number"))
+print(math.sqrt(number))
+
+Answer 5:
+import cmath
+a = int(input("enter power 2 position a:"))
+b = int(input("enter power 1 position b:"))
+c = int(input("enter constant:"))
+first_root= (-b + cmath.sqrt(b*b-4*a*c))/(2*a)
+second_root= (-b - cmath.sqrt(b*b-4*a*c))/(2*a)
+print("1st root:",first_root)
+print("2nd root:",second_root)
+
+Answer 6:
+import math
+a=float(input("enter 1st side:"))
+b=float(input("enter 2nd side:"))
+c=float(input("enter 3rd side:"))
+semi_per=(a+b+c)/2.0
+print(math.sqrt(semi_per*(semi_per-a)*(semi_per-b)*(semi_per-c)))
+
+Answer 7:
+number=int(input("enter five digit number"))
+sum=0
+sum += (number%10)
+number//= 10
+sum += (number%10)
+number//= 10
+sum += (number%10)
+number//= 10
+sum += (number%10)
+number//= 10
+sum += (number%10)
+number//= 10
+print(sum)
+
+Answer 8:
+print("Twinkle, twinkle, little star,"+'\n'+'\t'+"How I wonder what you are!"+'\n'+'\t'+'\t'+"Up above the world so high,\n\t\tLike a diamond in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are")
+      
+Answer 9:
+name=input("Enter your name")
+age=int(input("Enter your age"))
+address=input("Enter address")
+print(name+'\n'+str(age)+'\n'+address)
+
+
+
+
+
+
+

@@ -1,0 +1,157 @@
+				LAB3 ASSIGNMENT CDAC (PG-DAI)
+
+Answer 1:
+
+number=int(input("enter the number of elements"))
+print("Now enter all elements")
+list=[]
+for i in range(0,number):
+    list.append(int(input("enter element")))
+sum=0
+for i in range(0,number):
+    sum+= list[i]
+print("SUM OF LIST IS",sum)
+
+Answer 2:
+
+number=int(input("enter the number of elements"))
+print("Now enter all elements")
+list=[]
+for i in range(0,number):
+    list.append(int(input("enter element")))
+largest=list[0]
+for i in range(1,number):
+    if(list[i]>largest):
+        largest=list[i]
+print("LARGEST IN LIST IS",largest)
+
+Answer 3:
+
+number=int(input("enter the number of elements"))
+print("Now enter all elements")
+list=[]
+for i in range(0,number):
+    list.append(int(input("enter element")))
+smallest=list[0]
+for i in range(1,number):
+    if(list[i]<smallest):
+        smallest=list[i]
+print("SMALLEST IN LIST IS",smallest)
+
+Answer 4:
+
+color_list=["Red","Green","White","Black"]
+print("first color",color_list[0],'\n')
+print("last color",color_list[len(color_list)-1],'\n')
+
+Answer 5:
+
+string_input=input("enter string")
+if(len(string_input)<3):
+    pass
+else:
+    if(string_input[(len(string_input)-3):]=="ing"):
+        string_input+= "ly"
+    else:
+        string_input+= "ing"    
+print(string_input)
+
+Answer 6:
+
+list1=[]
+sum=0
+for i in range(0,5):
+    sum+=int(input("enter mark"))
+percent=sum/5
+if(percent>=60):
+    print(percent,":first division")
+elif(percent>=50 and percent<=59):
+    print(percent,":second division")
+elif(percent>=40 and percent<=49):
+    print(percent,":third division")
+else:
+    print(percent,":Fail")
+
+Answer 7:
+
+number=int(input("enter the number of elements"))
+print("Now enter all elements")
+list=[]
+for i in range(0,number):
+    list.append(int(input("enter element")))
+largest=list[0]
+for i in range(1,number):
+    if(list[i]>largest):
+        largest=list[i]
+print("LARGEST IN LIST IS",largest)
+
+Answer 8:
+
+year=int(input("enter year"))
+leap=False
+if (year % 4) == 0:
+    if (year % 100) == 0:
+        if (year % 400) == 0:
+            leap= True
+        else:
+            leap= False
+    else:
+            leap= True
+if(leap==True):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
+
+Answer 9:
+
+string=input("enter string to check palindrome")
+if(string==string[::-1]):
+    print("palindrome")
+else:
+    print("not palindrome")
+
+Answer 10:
+
+input_string=input("Enter your string giving space between words")
+input_list=input_string.split()
+print(sorted(input_list))
+
+Answer 11:
+
+list2=[]
+list2.append("a")
+list2.append("b")
+list3=[]
+list2.append(list3)
+list2.append("m")
+list2.append("n")
+list2[2].append("c")
+list4=[]
+list2[2].append(list4)
+list2[2][1].append("d")
+list2[2][1].append("e")
+list5=[]
+list2[2][1].append(list5)
+list2[2][1][2].append("f")
+list2[2][1][2].append("g")
+list2[2][1].append("k")
+list2[2].append("l")
+print("Original list is:",list2)
+list2[2][1][2].append("h")
+list2[2][1][2].append("i")
+list2[2][1][2].append("j")
+print("Modified list is:",list2)
+
+Answer 12:
+
+number=int(input("enter number of elements in the list"))
+list1=[]
+for i in range(0,number):
+    list1.append(int(input("Enter integer element")))
+print("You entered list:",list1)
+index1=list1.index(20)   
+if(index1!=-1):
+    list1[index1]=200
+print("Modified list:",list1)
+
+

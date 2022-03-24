@@ -1,0 +1,156 @@
+				LAB4 ASSIGNMENT CDAC (PG-DAI)
+
+Answer 1:
+#add odd numbers from 0 to 20
+list1=[x for x in range(20) if x%2!=0]
+print(list1)
+print(sum(list1))
+
+Answer 2:
+sum=0
+for i in range(101,200):
+    sum+=i
+print(sum) 
+
+Answer 3:
+
+list1=[ x*x for x in range(1,21) if x%2==0]
+print(sum(list1))
+
+Answer 4:
+
+list1=[print(chr(x),"=",x,"\n") for x in range(65,91)]
+
+Answer 5:
+
+list1=[print(x,"=",chr(x),"\n") for x in range(48,58)]
+
+Answer 6:
+
+list1=[print(x,"=",chr(x),"\n") for x in range(97,123)]
+
+Answer 7:
+
+list1=[int(input("enter element")) for x in range(5)]
+print(list1[::-1])
+
+Answer 8:
+
+dict1={1:10,2:20}
+dict2={3:30,4:40}
+dict3={5:50,6:60}
+dict4={}
+for i,j,k in zip(dict1,dict2,dict3):
+    dict4[i]=dict1[i]
+    dict4[j]=dict2[j]
+    dict4[k]=dict3[k]
+print(dict4)  
+
+Answer 9:
+
+dict1={0:10,1:20}
+dict1[2]=30
+print(dict1)
+
+Answer 10:
+
+color_set_1 = set(["White", "Black","Red"])
+color_set_2 = set(["Red","Green"])
+color_set_3=color_set_1^color_set_2
+print(color_set_3)
+
+Answer 11:
+
+list1=[1,2,3,4,5,6,7]
+list1=[i*i for i in list1]
+print(list1)
+
+Answer 12:
+
+string1=input("Enter string")
+count_dict={'a':0,'e':0,'i':0,'o':0,'u':0}
+for j in string1:
+    if(j in count_dict.keys()):
+        count_dict[j]+=1
+print("number of a = ",count_dict['a'])
+print("number of e = ",count_dict['e'])
+print("number of i = ",count_dict['i'])
+print("number of o = ",count_dict['o'])
+print("number of u = ",count_dict['u'])
+
+Answer 13:
+
+sampleDict = {
+    "class":{
+        "student":{
+            "name":"Mike","marks":{
+                "physics":70,
+                "history":80
+                }
+            }
+        }
+    }
+print(sampleDict["class"]["student"]["marks"]["history"])
+
+Answer 14:
+
+import string
+string_p = string.punctuation
+input_string=input("enter string to remove punctuation")
+new_string=""
+for i in input_string:
+    if(i in string_p):
+        pass
+    else:
+        new_string+=i
+print(new_string)        
+        
+    
+Answer 15:
+
+for i in range(3):
+    j=i
+    while(j>=0):
+        print(j+1,end=" ")
+        j-=1
+    print("\n")    
+
+Answer 16:
+
+for i in range(6):
+    j=i
+    while(j>=0):
+        print('*',end=" ")
+        j-=1
+    print("\n")    
+
+Answer 17:
+
+for i in range(4):
+    print("*"*(i+1))   
+for i in range(3,0,-1):
+    #j=i
+    print("*"*i) 
+
+Answer 18:
+print("\t",end="")
+for i in range(1,11):
+    #if(i!=10):
+        print("{0:4d}".format(i),end="")
+    #else:
+     #   print(i,end="")
+print("\n")    
+print("    ",end="")
+print("\t+----------------------------------------")
+
+#printing table now
+
+for i in range(1,11):
+    #print("{0:4d}".format(i),end="")
+    print("   {0:4d} |".format(i),end="")
+    j=1
+    k=10
+    while(j<=10):
+        print("{0:4d}".format(j*i),end="")
+        j+=1
+    print("\n")    
