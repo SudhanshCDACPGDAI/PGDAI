@@ -26,7 +26,7 @@ for i in range(1,number):
 print("LARGEST IN LIST IS",largest)
 
 Answer 3:
-
+hi sudhansh
 number=int(input("enter the number of elements"))
 print("Now enter all elements")
 list=[]
